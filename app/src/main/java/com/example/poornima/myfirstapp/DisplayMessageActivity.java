@@ -3,8 +3,10 @@ package com.example.poornima.myfirstapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.view.ViewGroup;
+
 
 
 
@@ -18,7 +20,7 @@ public class DisplayMessageActivity extends AppCompatActivity {
        Intent intent= getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
          // Capture the layout's TextView and set the string as its text
-        TextView textView = (TextView) findViewById(R.id.textView);
+        TextView textView = (TextView) findViewById(R.id.textView4);
         textView.setText(message);
 
     }
